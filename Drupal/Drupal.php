@@ -190,11 +190,11 @@ class Drupal implements DrupalInterface
         $phases = _drush_bootstrap_phases(FALSE, TRUE);
         drush_set_context('DRUSH_BOOTSTRAP_PHASE', DRUSH_BOOTSTRAP_NONE);
 
-        // We need some global options processed at this early stage. Namely --debug.
-        _drush_bootstrap_global_options();
+        //// We need some global options processed at this early stage. Namely --debug.
+        //_drush_bootstrap_global_options();
 
-        $return = '';
-        $command_found = FALSE;
+        //$return = '';
+        //$command_found = FALSE;
 
         foreach ($phases as $phase) {
             drush_bootstrap_to_phase($phase);
